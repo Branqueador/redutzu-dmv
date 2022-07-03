@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' rel='stylesheet'></link>
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet'></link>
+    
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class='content'>
+        <div class='header'>
+            <div class="total-questions">
+                <span id='total'></span>
+                <strong>Intrebari initiale</strong>
+            </div>
+            <div class="remaining-questions">
+                <span id='remaining'></span>
+                <strong>Intrebari ramase</strong>
+            </div>
+            <div class="timer">
+                <div id='timer'></div>
+            </div>
+            <div class="correct-answers">
+                <span id='correct'></span>
+                <strong>Raspunsuri corecte</strong>
+            </div>
+            <div class="wrong-answers">
+                <span id='wrong'></span>
+                <strong>Intrebari gresite</strong>
+            </div>
+        </div>
+        <div class="question">
+            <div class="question-content">
+            </div>
+        </div>
+        <div class="footer">
+            <button id='later'><i class="fa-solid fa-arrow-rotate-left"></i> Raspunde mai tarziu</button>
+            <button id='modify' disabled><i class="fa-solid fa-circle-xmark"></i> Modifica raspunsul</button>
+            <button id='send' disabled><i class="fa-solid fa-circle-check"></i> Trimite raspunsul</button>
+        </div>
+    </div>
+
+    <script src='nui://game/ui/jquery.js'></script>
+    <script src='questions.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
